@@ -57,5 +57,13 @@ class View extends Kohana_View{
 		$tpl = $mustache->loadTemplate($kohana_view_filename);
 		return $tpl->render($vars);
 	}
+	
+	public function as_array(){
+		$data = [];
+		foreach($this->_data as $key=>$item){
+			$data[$key] = is_object($item) ?  false : $item;//((method_exists($item,'as_array'))?$item->as_array():$item->render())
+			}
+		return $this->_data;
+		}
 
 }
