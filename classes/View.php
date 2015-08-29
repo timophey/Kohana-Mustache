@@ -7,8 +7,7 @@ class View extends Kohana_View{
 
 	public function set_filename($file) {
 		$mustacheFile = Kohana::find_file('views', $file, 'mustache');
-		// If there's no mustache file by that name, do the default:
-		if ($mustacheFile === false) return Kohana_View::set_filename($file);
+		if ($mustacheFile === false) return parent::set_filename($file);
 		
 		$this->_file = $mustacheFile;
 		$this->_tmpl = $file;
