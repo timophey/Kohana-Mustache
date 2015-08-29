@@ -8,6 +8,10 @@ The module is compatible with Kohana 3.3. For earlier versions, you might have t
 
 ## Usage
 
+- Clone Git repo and it's dependences
+
+	git clone --recursive https://github.com/timophey/Kohana-Mustache.git
+
 - Add the module to Kohana. Copy the `mustache` folder into the `modules` folder of Kohana.
 
 - Enable the module in `bootstrap.php`:
