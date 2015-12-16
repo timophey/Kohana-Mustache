@@ -10,7 +10,7 @@ The module is compatible with Kohana 3.3. For earlier versions, you might have t
 
 - Clone Git repo and it's dependences
 
-	git clone --recursive https://github.com/timophey/Kohana-Mustache.git
+	git clone --recursive https://github.com/timophey/kohana-mustache.git
 
 - Add the module to Kohana. Copy the `mustache` folder into the `modules` folder of Kohana.
 
